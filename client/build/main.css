@@ -2,4 +2,13 @@
   height: 170px;
   width: 170px;
   border: 1px solid black;
+  float: left;
+
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+#boardWrapper {
+  width: 600px;
 }

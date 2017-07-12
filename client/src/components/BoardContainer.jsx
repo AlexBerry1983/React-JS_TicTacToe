@@ -11,15 +11,13 @@ class BoardContainer extends React.Component{
     // })
 
     const boardToRender = this.props.board.map( ( square, index ) => {
-      console.log("boardcontainter index", index)
-      value = index
-
-      return <BoardSquare value={ index } key={ index } handleOnClick={this.props.handleOnClick}/>
+      console.log("boardcontainer index", index)
+      return <BoardSquare index={index} key={index} board={this.props.board} handleOnClick={this.props.handleOnClick}/>
 
     })
 
     return (
-    <div>
+    <div id="boardWrapper">
       {boardToRender}
     </div>
     )
